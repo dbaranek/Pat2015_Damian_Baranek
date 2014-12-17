@@ -22,7 +22,7 @@ public class SplashScreen extends ActionBarActivity {
             public void run() {
                 Intent splashIntent = new Intent(SplashScreen.this,MainScreen.class);
                 startActivity(splashIntent);
-                SplashScreen.this.finish();
+
             }
         };
         m_myHandler = new Handler();
