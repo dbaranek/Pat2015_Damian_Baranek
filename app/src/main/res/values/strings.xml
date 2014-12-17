@@ -2,9 +2,11 @@
 <resources>
     <string name="app_name">Damian.Baranek</string>
     <string name="title_activity_main_screen">Ekran główny</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
-    <string name="onBackPressedMessage">Ładowanie ekranu głównego zostało anulowane</string>
+    <string name="onBackPressedMessage">Ładowanie ekranu głównego zostało anulowane\nNaciśnij ponownie aby zamknąć aplikację</string>
+    <string name="splashImageDescription">This is image with Android</string>
+    <string name="headerText">Menu aplikacji</string>
+    <string name="exitButton">Wyjście</string>
 
 </resources>
