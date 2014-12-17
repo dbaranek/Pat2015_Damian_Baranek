@@ -10,5 +10,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/splash_image"
-        android:id="@+id/splashImage" />
+        android:id="@+id/splashImage"
+        android:contentDescription="@string/splashImageDescription"/>
 </RelativeLayout>

@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 public class SplashScreen extends ActionBarActivity {
     private static final int SPLASH_TIME = 5000;
+    private int m_numBackPressed = 0;
     private Handler m_myHandler;
     private Runnable m_myRunnable;
     @Override
@@ -22,7 +23,7 @@ public class SplashScreen extends ActionBarActivity {
             public void run() {
                 Intent splashIntent = new Intent(SplashScreen.this,MainScreen.class);
                 startActivity(splashIntent);
-
+                SplashScreen.this.finish();
             }
         };
         m_myHandler = new Handler();
@@ -30,8 +31,14 @@ public class SplashScreen extends ActionBarActivity {
     }
     @Override
     public void onBackPressed(){
+        m_numBackPressed++;
+        if(m_numBackPressed >= 2)
+        {
+            System.exit(0);
+        }
         m_myHandler.removeCallbacks(m_myRunnable);
         Toast.makeText(SplashScreen.this,R.string.onBackPressedMessage,Toast.LENGTH_LONG).show();
+
     }
 
     @Override
