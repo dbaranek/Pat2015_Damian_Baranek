@@ -122,6 +122,7 @@ public class MainScreen extends ActionBarActivity {
         protected Void doInBackground(Void... params) {
             listItems = new ArrayList<ListItem>();
             String jsonInfo = downloadJSON(BASE_SERVER_URL+"/page_0.json");
+            String sasdasda;
             if(jsonInfo != null) {
                 try {
                     jsonResponse = new JSONObject(jsonInfo);
